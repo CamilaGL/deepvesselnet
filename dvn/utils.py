@@ -163,7 +163,7 @@ def read_dicom(source_path, verbose=True):
 
     return image
 
-def read_images(img_index=0):
+def read_images(DATA_PATH,img_index=0):
     patients = os.listdir(DATA_PATH)
     patients.sort()
     print("Found %i patients in the data path"%len(patients))
